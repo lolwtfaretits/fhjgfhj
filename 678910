@@ -6,6 +6,19 @@ local TweenService = game:GetService("TweenService")
 local LocalPlayer = Players.LocalPlayer
 local Holding = false
 
+_G.AimbotEnabled = false
+_G.TeamCheck = false
+_G.AimPart = "UpperTorso"
+_G.Sensitivity = 0
+
+_G.CircleSides = 50
+_G.CircleColor = Color3.fromRGB(41, 72, 122) 
+_G.CircleTransparency = 1 
+_G.CircleRadius = 90 
+_G.CircleFilled = false 
+_G.CircleVisible = false 
+_G.CircleThickness = 1
+
 local FOVCircle = Drawing.new("Circle")
 FOVCircle.Position = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
 FOVCircle.Radius = _G.CircleRadius
