@@ -35,15 +35,15 @@ local tableinsert = table.insert
 
 -- // Silent Aim Vars
 getgenv().Aiming = {
-    Enabled = false,
+    Enabled = true,
 
     ShowFOV = false,
-    FOV = 30,
     Filled = false,
+    FOV = 30,
     FOVSides = 40,
-    FOVColour = Color3fromRGB(28, 56, 139),
+    FOVColour = Color3fromRGB(231, 84, 128),
 
-    VisibleCheck = false,
+    VisibleCheck = true,
     
     HitChance = 100,
 
@@ -74,7 +74,7 @@ local circle = Drawingnew("Circle")
 circle.Transparency = 1
 circle.Thickness = 2
 circle.Color = Aiming.FOVColour
-circle.Filled = false
+circle.Filled = Aiming.Filled
 Aiming.FOVCircle = circle
 
 -- // Update
